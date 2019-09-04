@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_income_view" targetNamespace="http://tempuri.org/xsd_income_view.xsd" xmlns:mstns="http://tempuri.org/xsd_income_view.xsd" xmlns="http://tempuri.org/xsd_income_view.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataStorageConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataStorageConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bill_record.Properties.Settings.GlobalReference.Default.DataStorageConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_income_view" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_income_view" msprop:Generator_UserDSName="xsd_income_view">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_income" msprop:Generator_TableClassName="tbl_incomeDataTable" msprop:Generator_TableVarName="tabletbl_income" msprop:Generator_TablePropName="tbl_income" msprop:Generator_RowDeletingName="tbl_incomeRowDeleting" msprop:Generator_RowChangingName="tbl_incomeRowChanging" msprop:Generator_RowEvHandlerName="tbl_incomeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_incomeRowDeleted" msprop:Generator_UserTableName="tbl_income" msprop:Generator_RowChangedName="tbl_incomeRowChanged" msprop:Generator_RowEvArgName="tbl_incomeRowChangeEvent" msprop:Generator_RowClassName="tbl_incomeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inc_serial" msdata:ReadOnly="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columninc_serial" msprop:Generator_ColumnPropNameInRow="inc_serial" msprop:Generator_ColumnPropNameInTable="inc_serialColumn" msprop:Generator_UserColumnName="inc_serial" type="xs:int" minOccurs="0" />
+              <xs:element name="inc_date" msprop:Generator_ColumnVarNameInTable="columninc_date" msprop:Generator_ColumnPropNameInRow="inc_date" msprop:Generator_ColumnPropNameInTable="inc_dateColumn" msprop:Generator_UserColumnName="inc_date" type="xs:dateTime" />
+              <xs:element name="inc_source" msprop:Generator_ColumnVarNameInTable="columninc_source" msprop:Generator_ColumnPropNameInRow="inc_source" msprop:Generator_ColumnPropNameInTable="inc_sourceColumn" msprop:Generator_UserColumnName="inc_source" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="inc_amount" msprop:Generator_ColumnVarNameInTable="columninc_amount" msprop:Generator_ColumnPropNameInRow="inc_amount" msprop:Generator_ColumnPropNameInTable="inc_amountColumn" msprop:Generator_UserColumnName="inc_amount" type="xs:double" />
+              <xs:element name="inc_valid" msprop:Generator_ColumnVarNameInTable="columninc_valid" msprop:Generator_ColumnPropNameInRow="inc_valid" msprop:Generator_ColumnPropNameInTable="inc_validColumn" msprop:Generator_UserColumnName="inc_valid" type="xs:boolean" />
+              <xs:element name="inc_public" msprop:Generator_ColumnVarNameInTable="columninc_public" msprop:Generator_ColumnPropNameInRow="inc_public" msprop:Generator_ColumnPropNameInTable="inc_publicColumn" msprop:Generator_UserColumnName="inc_public" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

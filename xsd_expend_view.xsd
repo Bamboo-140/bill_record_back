@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsd_expend_view" targetNamespace="http://tempuri.org/xsd_expend_view.xsd" xmlns:mstns="http://tempuri.org/xsd_expend_view.xsd" xmlns="http://tempuri.org/xsd_expend_view.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DataStorageConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DataStorageConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.bill_record.Properties.Settings.GlobalReference.Default.DataStorageConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsd_expend_view" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsd_expend_view" msprop:Generator_UserDSName="xsd_expend_view">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_expend" msprop:Generator_TableClassName="tbl_expendDataTable" msprop:Generator_TableVarName="tabletbl_expend" msprop:Generator_TablePropName="tbl_expend" msprop:Generator_RowDeletingName="tbl_expendRowDeleting" msprop:Generator_RowChangingName="tbl_expendRowChanging" msprop:Generator_RowEvHandlerName="tbl_expendRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_expendRowDeleted" msprop:Generator_UserTableName="tbl_expend" msprop:Generator_RowChangedName="tbl_expendRowChanged" msprop:Generator_RowEvArgName="tbl_expendRowChangeEvent" msprop:Generator_RowClassName="tbl_expendRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="exp_serial" msdata:ReadOnly="true" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnexp_serial" msprop:Generator_ColumnPropNameInRow="exp_serial" msprop:Generator_ColumnPropNameInTable="exp_serialColumn" msprop:Generator_UserColumnName="exp_serial" type="xs:int" minOccurs="0" />
+              <xs:element name="exp_date" msprop:Generator_ColumnVarNameInTable="columnexp_date" msprop:Generator_ColumnPropNameInRow="exp_date" msprop:Generator_ColumnPropNameInTable="exp_dateColumn" msprop:Generator_UserColumnName="exp_date" type="xs:dateTime" />
+              <xs:element name="exp_item" msprop:Generator_ColumnVarNameInTable="columnexp_item" msprop:Generator_ColumnPropNameInRow="exp_item" msprop:Generator_ColumnPropNameInTable="exp_itemColumn" msprop:Generator_UserColumnName="exp_item" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="exp_count" msprop:Generator_ColumnVarNameInTable="columnexp_count" msprop:Generator_ColumnPropNameInRow="exp_count" msprop:Generator_ColumnPropNameInTable="exp_countColumn" msprop:Generator_UserColumnName="exp_count" type="xs:int" />
+              <xs:element name="exp_price" msprop:Generator_ColumnVarNameInTable="columnexp_price" msprop:Generator_ColumnPropNameInRow="exp_price" msprop:Generator_ColumnPropNameInTable="exp_priceColumn" msprop:Generator_UserColumnName="exp_price" type="xs:double" />
+              <xs:element name="exp_level" msprop:Generator_ColumnVarNameInTable="columnexp_level" msprop:Generator_ColumnPropNameInRow="exp_level" msprop:Generator_ColumnPropNameInTable="exp_levelColumn" msprop:Generator_UserColumnName="exp_level" type="xs:int" />
+              <xs:element name="exp_valid" msprop:Generator_ColumnVarNameInTable="columnexp_valid" msprop:Generator_ColumnPropNameInRow="exp_valid" msprop:Generator_ColumnPropNameInTable="exp_validColumn" msprop:Generator_UserColumnName="exp_valid" type="xs:boolean" />
+              <xs:element name="exp_type" msprop:Generator_ColumnVarNameInTable="columnexp_type" msprop:Generator_ColumnPropNameInRow="exp_type" msprop:Generator_ColumnPropNameInTable="exp_typeColumn" msprop:Generator_UserColumnName="exp_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="exp_public" msprop:Generator_ColumnVarNameInTable="columnexp_public" msprop:Generator_ColumnPropNameInRow="exp_public" msprop:Generator_ColumnPropNameInTable="exp_publicColumn" msprop:Generator_UserColumnName="exp_public" type="xs:boolean" />
+              <xs:element name="exp_note" msprop:Generator_ColumnVarNameInTable="columnexp_note" msprop:Generator_ColumnPropNameInRow="exp_note" msprop:Generator_ColumnPropNameInTable="exp_noteColumn" msprop:Generator_UserColumnName="exp_note" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
